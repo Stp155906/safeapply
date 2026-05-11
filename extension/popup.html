@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeApply</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="topbar">
+        <div class="brand">SA</div>
+        <div class="brand-copy">
+          <strong>SafeApply</strong>
+          <span>Job trust score</span>
+        </div>
+        <button id="rescan" type="button">Rescan</button>
+      </header>
+
+      <section id="scorecard" class="scorecard loading">
+        <div class="pulse"></div>
+        <p>Scanning visible job-page text...</p>
+      </section>
+
+      <section class="privacy">
+        <span>Privacy-first</span>
+        <strong>No resumes, passwords, or applications collected.</strong>
+      </section>
+
+      <section class="disclaimer">
+        <span>Important</span>
+        <strong>Scores are guidance, not a final verdict. A job may still be real, so verify through the company’s official careers page before applying.</strong>
+      </section>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
