@@ -76,6 +76,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .navCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   justify-self: end;
   padding: 13px 18px;
   border-radius: 15px;
@@ -330,6 +333,19 @@ h2 {
 .proof p {
   margin-bottom: 0;
   font-weight: 750;
+}
+
+.repoLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  margin-top: 18px;
+  padding: 13px 16px;
+  border-radius: 14px;
+  color: #ffffff;
+  background: var(--ink);
+  font-weight: 950;
 }
 
 @media (max-width: 980px) {

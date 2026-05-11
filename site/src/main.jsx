@@ -1,6 +1,6 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { LockKeyhole, SearchCheck, ShieldCheck, Sparkles } from 'lucide-react'
+import { Code2, LockKeyhole, SearchCheck, ShieldCheck, Sparkles } from 'lucide-react'
 import './style.css'
 
 function App() {
@@ -13,7 +13,9 @@ function App() {
           <a href="#proof">Proof</a>
           <a href="#research">Research</a>
         </nav>
-        <a className="navCta" href="#proof">Extension proof</a>
+        <a className="navCta" href="https://github.com/Stp155906/safeapply" target="_blank" rel="noreferrer">
+          Fork on GitHub
+        </a>
       </header>
 
       <section className="hero" id="top">
@@ -26,7 +28,9 @@ function App() {
           </p>
           <div className="actions">
             <a className="primary" href="#product"><ShieldCheck size={18} />View score system</a>
-            <a className="secondary" href="#proof"><SearchCheck size={18} />See proof layer</a>
+            <a className="secondary" href="https://github.com/Stp155906/safeapply" target="_blank" rel="noreferrer">
+              <Code2 size={18} />Fork on GitHub
+            </a>
           </div>
           <p className="plainDisclaimer">
             Important: SafeApply is a risk score and verification helper, not a final verdict. A job may still be real.
@@ -68,10 +72,15 @@ function App() {
           <p className="eyebrow">Responsible AI showcase</p>
           <h2>Guidance, not accusation.</h2>
         </div>
-        <p>
-          SafeApply does not label an employer as fake. It shows risk patterns, provides evidence links, and encourages
-          applicants to verify through the official company careers page.
-        </p>
+        <div>
+          <p>
+            SafeApply does not label an employer as fake. It shows risk patterns, provides evidence links, and encourages
+            applicants to verify through the official company careers page.
+          </p>
+          <a className="repoLink" href="https://github.com/Stp155906/safeapply" target="_blank" rel="noreferrer">
+            <Code2 size={18} />View and fork the public repo
+          </a>
+        </div>
       </section>
     </main>
   )
